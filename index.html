@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys</title>
+
+    <script src="https://kit.fontawesome.com/9f8557dc5b.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -18,7 +33,133 @@
         }
     </script>
 </head>
-<body>
-    
+<body class="manrope-font">
+    <header class="container mx-auto lg:p-5">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a href="" class="text-[#131318] text-[36px] font-[800]">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#FF4240] text-[16px] font-[700]">Home</a></li>
+                        <li><a class="text-[#424247] text-[16px] font-[400]">About</a></li>
+                        <li><a class="text-[#424247] text-[16px] font-[400]">Pages</a></li>
+                        <li><a class="text-[#424247] text-[16px] font-[400]">Blog</a></li>
+                        <li><a class="text-[#424247] text-[16px] font-[400]">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex lg:gap-10">
+                    <i class="fa-solid fa-magnifying-glass text-[24px] text-[#89898B]"></i>
+                    <a class="btn bg-[#FF4240] text-[#FFFFFF] font-[700] text-[20px]">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <div class="p-[10px] lg:relative">
+            <div class="carousel w-full lg:h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/1.png" class="w-full" />
+                    <div class="absolute lg:left-5 left-[35%] bottom-5 flex gap-[16px] justify-between">
+                        <a href="#slide4" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/2.png" class="w-full" />
+                    <div class="absolute lg:left-5 left-[35%] bottom-5 flex gap-[16px] justify-between">
+                        <a href="#slide1" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/3.png" class="w-full" />
+                    <div class="absolute lg:left-5 left-[35%] bottom-5 flex gap-[16px] justify-between">
+                        <a href="#slide2" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/4.png" class="w-full" />
+                    <div class="absolute lg:left-5 left-[35%] bottom-5 flex gap-[16px] justify-between">
+                        <a href="#slide3" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-[#131318] text-[#FFFFFF]">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-[566px] p-[32px] bg-[#131318] rounded-[16px] lg:absolute lg:bottom-10 lg:right-10">
+                <h1 class="text-[#FFFFFF] text-[24px] font-[800]">Meet all the heroes from the field</h1>
+                <p class="text-[#FFFFFF99] text-[16px] font-[500]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto p-5">
+        <section>
+            <div class="border-y-[2px] border-[#13131833] border-dashed py-[32px]">
+                <h3 class="text-[#131318] text-[36px] font-[800] text-center">Professional Hockeys Club</h3>
+                <p class="text-[#13131899] text-[16px] font-[500] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+        </section>
+        <section class="mt-[48px] flex justify-center">
+            <div class="lg:flex gap-[34px]">
+                <div class="relative">
+                    <figure class="w-[250px]">
+                        <div class="absolute left-0 radial-progress text-[#E7E7E8] text-center ml-[84px]" style="--value:100;" role="progressbar"></div>
+                        <div class="radial-progress text-[#49D293] text-[24px] font-[800] text-center ml-[84px]" style="--value:87;" role="progressbar"><span class="text-[#131318]">87%</span></div>
+                        <figcaption>
+                            <h1 class="text-center text-[#131318] text-[20px] font-[600]">Prayer Facility</h1>
+                            <p class="text-center text-[#13131899] text-[16px] font-[400]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="relative">
+                    <figure class="w-[250px]">
+                        <div class="absolute left-0 radial-progress text-[#E7E7E8] text-center ml-[84px]" style="--value:100;" role="progressbar"></div>
+                        <div class="radial-progress text-[#FFB546] text-[24px] font-[800] text-center ml-[84px]" style="--value:87;" role="progressbar"><span class="text-[#131318]">95%</span></div>
+                        <figcaption>
+                            <h1 class="text-center text-[#131318] text-[20px] font-[600]">Experienced Coach</h1>
+                            <p class="text-center text-[#13131899] text-[16px] font-[400]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="relative">
+                    <figure class="w-[250px]">
+                        <div class="absolute left-0 radial-progress text-[#E7E7E8] text-center ml-[84px]" style="--value:100;" role="progressbar"></div>
+                        <div class="radial-progress text-[#4C8DF1] text-[24px] font-[800] text-center ml-[84px]" style="--value:87;" role="progressbar"><span class="text-[#131318]">90%</span></div>
+                        <figcaption>
+                            <h1 class="text-center text-[#131318] text-[20px] font-[600]">Senior Player</h1>
+                            <p class="text-center text-[#13131899] text-[16px] font-[400]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="relative">
+                    <figure class="w-[250px]">
+                        <div class="absolute left-0 radial-progress text-[#E7E7E8] text-center ml-[84px]" style="--value:100;" role="progressbar"></div>
+                        <div class="radial-progress text-[#FF4240] text-[24px] font-[800] text-center ml-[84px]" style="--value:87;" role="progressbar"><span class="text-[#131318]">80%</span></div>
+                        <figcaption>
+                            <h1 class="text-center text-[#131318] text-[20px] font-[600]">Training Ground</h1>
+                            <p class="text-center text-[#13131899] text-[16px] font-[400]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
